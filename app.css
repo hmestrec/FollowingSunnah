@@ -39,7 +39,7 @@ a.download-link, a.video-link {
 }
 
 a.download-link:hover, a.video-link:hover {
-    background-color: #b2dfdb;
+    background-color: #000000;
 }
 
 footer p {

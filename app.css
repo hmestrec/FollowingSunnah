@@ -90,11 +90,11 @@ footer p {
   .tabcontent {
     display: block;
     padding: 6px 12px;
-    border: 3px solid #af4141;
     margin-bottom: 5px;
     margin-top: 5px;
     border-radius: 20px;
     margin-right: auto;
+    background-color: #e6c772;
   }
 
 

@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Tabbed Website</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Following the Sunnah</title>
+    <img src="" alt="Website Logo">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<header>
-    <img src="https://drive.google.com/file/d/1cry9E3-vQi0gwrk9hST22ma1rajoWdxY/view?usp=sharing" alt="Website Logo" class="logo">
-    <nav>
-        <ul id="nav-tab">
-            <li class="tab active" onclick="openTab('Home')">Home</li>
-            <li class="tab" onclick="openTab('Lectures')">Lectures</li>
-            <li class="tab" onclick="openTab('Books')">Books</li>
-            <li class="tab" onclick="openTab('HowTo')">How to</li>
-            <li class="tab" onclick="openTab('Contact')">Contact us</li>
-        </ul>
-    </nav>
-</header>
-<div id="Home" class="content active">
-    <h1>Welcome to Our Site</h1>
-    <p>This is the homepage.</p>
-</div>
-<div id="Lectures" class="content">
-    <h1>Lectures</h1>
-    <p>Information about lectures here.</p>
-</div>
-<div id="Books" class="content">
-    <h1>Books</h1>
-    <p>Information about books here.</p>
-</div>
-<div id="HowTo" class="content">
-    <h1>How to Guides</h1>
-    <p>Guides and tutorials.</p>
-</div>
-<div id="Contact" class="content">
-    <h1>Contact Us</h1>
-    <p>Contact details here.</p>
-</div>
-<script src="script.js"></script>
+    <header>
+        <h1>Following the Sunnah</h1>
+    </header>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Prayer')">Prayer</button>
+        <button class="tablinks" onclick="openTab(event, 'Videos')">Videos</button>
+        <button class="tablinks" onclick="openTab(event, 'Downloads')">Downloads</button>
+      </div>
+      
+      <div id="Prayer" class="tabcontent">
+        <h3>Prayer</h3>
+          <a href="asf" download>Download PDF</a>
+          <p>Learn how to pray...</p>
+      </div>
+      
+      <div id="Videos" class="tabcontent">
+        <h3>Videos</h3>
+          <p>Watch instructional videos...</p>
+          <a href="https://www.youtube.com/watch?v=zUa9SoI0Qws" target ="_blank">How to pray like the Prophet</a>        
+      </div>
+      
+      <div id="Downloads" class="tabcontent">
+        <h3>Downloads</h3>
+        <p>Download our materials...</p>
+      </div>
+    
+    </div>
+    <footer>
+        <p>&copy; 2024 Islamic Learning Resources</p>
+    </footer>
+    <script>
+        // Add any JavaScript here if needed
+    </script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -5,31 +5,46 @@ body, html {
 }
 
 header {
-  background-color: #f0f0f0;
+  background-color: #836f00;
   padding: 10px 20px;
-  text-align: left;
-  display: flex;
-  align-items: center;
+  text-align: center; /* Center the navigation */
 }
 
 .logo {
+  position: absolute; /* Position logo absolutely to the left top */
   height: 50px;
-  margin-right: 20px;
+  left: 20px;
+  top: 10px;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0 auto; /* Center the list if needed */
+  display: inline-block;
 }
 
 li {
   display: inline;
-  margin-right: 10px;
-  cursor: pointer;
+  margin: 0 5px;
 }
 
-li.active {
-  color: blue;
+button {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darken the button on hover */
+}
+
+button.active {
+  background-color: #0056b3; /* Active state with a darker background */
 }
 
 .content {

@@ -80,7 +80,7 @@ footer p {
 
   /* Logo Resize */
   .logo {
-    width: auto;  /* Adjust width as needed */
+    width: 30px;  /* Adjust width as needed */
     height: auto;  /* Keeps the aspect ratio intact */
     margin-right: 1800px;
     border-radius: 20px;

@@ -1,17 +1,36 @@
-function openTab(tabName) {
+function openTab(evt, tabName) {
+  // Declare all variables
   var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("content");
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tab");
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
-  document.querySelector('[onclick="openTab(\'' + tabName + '\')"]').className += " active";
+  evt.currentTarget.className += " active";
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  openTab('Home'); // Opens the Home tab by default
+// Add event listeners once the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all tab buttons and add click event listeners
+  var tabs = document.querySelectorAll('.tablinks');
+  tabs.forEach(tab => {
+      tab.addEventListener('click', function(event) {
+          openTab(event, tab.getAttribute('onclick').split("'")[1]);
+      });
+  });
+
+  // Automatically click the first tab to load it by default
+  if (tabs.length > 0) {
+      tabs[0].click();
+  }
 });

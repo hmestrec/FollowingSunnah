@@ -3,23 +3,24 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #ebe8c2;
     color: #333;
 }
 
 header, footer {
     background-color: #5f6900;
     color: #000000;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     width: 100%;
+    border-radius: 20px;
 }
 
 .content {
     padding: 20px;
     max-width: 800px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #776156;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -51,7 +52,8 @@ footer p {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #746046;
+    border-radius: 20px;
   }
   
   /* Style the buttons inside the tab */
@@ -63,6 +65,7 @@ footer p {
     cursor: pointer;
     padding: 14px 16px;
     transition: background-color 0.3s;
+    border-radius: 20px;
   }
   
   /* Change background color of buttons on hover */
@@ -74,12 +77,26 @@ footer p {
   .tab button.active {
     background-color: #ccc;
   }
+
+  /* Logo Resize */
+  .logo {
+    width: 100px;  /* Adjust width as needed */
+    height: auto;  /* Keeps the aspect ratio intact */
+    margin-right: 1800px;
+    border-radius: 20px;
+  }
   
   /* Style the tab content */
   .tabcontent {
-    display: none;
+    display: block;
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    border: 3px solid #af4141;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    margin-right: auto;
   }
+
+
+
   

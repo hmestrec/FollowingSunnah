@@ -1,15 +1,17 @@
-// script.js
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none"; // Hide all elements with class="tabcontent"
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block"; // Show the current tab
-    evt.currentTarget.className += " active"; // Highlight the current tab
+function openTab(tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("content");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
   }
-  
+  tablinks = document.getElementsByClassName("tab");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  document.querySelector('[onclick="openTab(\'' + tabName + '\')"]').className += " active";
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  openTab('Home'); // Opens the Home tab by default
+});

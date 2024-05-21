@@ -34,3 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
       tabs[0].click();
   }
 });
+
+// scripts.js
+document.addEventListener('DOMContentLoaded', function() {
+    const buttonLinks = document.querySelectorAll('.button-link');
+    
+    buttonLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            // You can add any JavaScript functionality here if needed
+            console.log('Button link clicked:', link.textContent);
+        });
+    });
+});

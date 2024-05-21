@@ -84,6 +84,8 @@ footer p {
     height: auto;  /* Keeps the aspect ratio intact */
     margin-right: 1800px;
     border-radius: 20px;
+    background-color: #c2a34e;
+    background: #c2a34e;
   }
   
   /* Style the tab content */

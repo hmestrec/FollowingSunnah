@@ -46,3 +46,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const videoLinks = document.querySelectorAll('.video-link');
+    
+    videoLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            // You can add any JavaScript functionality here if needed
+            console.log('Video link clicked:', link.querySelector('.video-button').textContent);
+        });
+    });
+});

@@ -128,8 +128,10 @@ body {
 }
 
 .video-link {
+  width: 300px;
+  height: auto;
   display: inline-block;
-  text-decoration: none;
+  text-emphasis-color: white;
   color: white;
   border-radius: 5px;
   overflow: hidden;
@@ -138,29 +140,15 @@ body {
 
 .video-link:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(163, 48, 48, 0.2);
 }
 
 .video-thumbnail {
   display: block;
-  width: 70%;
+  width: 300px;
   height: auto;
 }
 
-.video-button {
-  display: block;
-  background-color: #007bff;
-  padding: 5px 10px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.video-button:hover {
-  background-color: #0056b3;
-}
 
 p {
   font-size: 16px;

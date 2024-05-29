@@ -81,12 +81,13 @@ footer p {
 
   /* Logo Resize */
   .logo {
-    width: 80px;  /* Adjust width as needed */
+    width: 100px;  /* Adjust width as needed */
     height: auto;  /* Keeps the aspect ratio intact */
     margin-right: 1800px;
-    border-radius: 20px;
-    background-color: #c2a34e;
-    background: #c2a34e;
+    border-radius: 5px;
+    background-color: transparent;
+    background: transparent;
+    background-blend-mode:lighten;
   }
   
   /* Style the tab content */

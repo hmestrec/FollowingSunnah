@@ -65,19 +65,19 @@ footer p {
 .tab {
   display: flex;
   justify-content: center;
-  background-color: #746046;
+  background-color: transparent;
   border-radius: 20px;
   margin: 20px 0;
   overflow: hidden;
 }
 
 .tab button {
-  background-color: inherit;
-  border: none;
-  outline: none;
+  background-color: #746046;
+  border: color(from color srgb r g b)
+  outline:rgba(163, 48, 48, 0.2);
   cursor: pointer;
   padding: 14px 20px;
-  transition: background-color 0.3s;
+  transition: 0.3s;
   border-radius: 20px;
 }
 

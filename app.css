@@ -1,161 +1,133 @@
-/* style.css */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ebe8c2;
-    color: #333;
-    tab-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ebe8c2;
+  color: #333;
 }
 
 header {
-    background-color: #c2a34e;
-    color: #000000;
-    text-align: center;
-    width: 100%;
-    border-radius: 20px;
-    height: 100px;
-  }
+  background-color: #c2a34e;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 20px;
+}
 
-  header h1 {
-    
-    text-align: center;
-    font-size: 24px; /* Adjust font size if needed */
-    text-align: center; /* Ensure the title is centered */
+.logo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 footer {
   background-color: #c2a34e;
-  color: #000000;
+  color: #000;
   padding: 10px 0;
   text-align: center;
   width: 100%;
   border-radius: 20px;
-  height: auto;
 }
 
 .content {
-    padding: 20px;
-    max-width: auto;
-    margin: 20px auto;
-    background-color: #776156;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #776156;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-    color: #000000;
+  color: #000;
 }
 
 a.download-link, a.video-link {
-    color: #004d40;
-    padding: 10px;
-    display: inline-block;
-    margin: 10px 0;
-    background-color: #708382;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  color: #004d40;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 0;
+  background-color: #708382;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 a.download-link:hover, a.video-link:hover {
-    background-color: #000000;
+  background-color: #000;
 }
 
 footer p {
-    margin: 0;
-    padding: 10px;
+  margin: 0;
+  padding: 10px;
 }
 
-.title {
-  text-align: center;
-  font-size: 20;
-}
-
-/* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #746046;
-    border-radius: 20px;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: background-color 0.3s;
-    border-radius: 20px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-
-  /* Logo Resize */
-  .logo {
-    width: 1920px;  /* Adjust width as needed */
-    height: 100px;  /* Keeps the aspect ratio intact */
-    margin-right: 1800px;
-    border-radius: 5px;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: block;
-    padding: 6px 12px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 20px;
-    margin-right: auto;
-    background-color: #e6c772;
-  }
-
-
-  .button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #864c00;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  background-color: #746046;
+  border-radius: 20px;
+  margin: 20px 0;
+  overflow: hidden;
 }
 
-.button-link:hover {
-    background-color: #0056b3;
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: background-color 0.3s;
+  border-radius: 20px;
 }
 
-body {
-  font-family: Arial, sans-serif;
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
 }
 
 .tabcontent {
-  margin: 5px;
+  display: none;
+  padding: 20px;
+  background-color: #e6c772;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #864c00;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
 }
 
 .video-link {
-  width: 300px;
-  height: auto;
-  display: inline-block;
-  text-emphasis-color: white;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
   color: white;
   border-radius: 5px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .video-link:hover {
@@ -165,12 +137,29 @@ body {
 
 .video-thumbnail {
   display: block;
-  width: 300px;
+  width: 100%;
   height: auto;
 }
-
 
 p {
   font-size: 16px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .tab {
+      flex-direction: column;
+  }
+
+  .tab button {
+      width: 100%;
+  }
+
+  .video-link {
+      max-width: 100%;
+  }
+
+  .button-link {
+      width: 100%;
+  }
 }

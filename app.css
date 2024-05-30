@@ -11,7 +11,7 @@ header {
   color: #000;
   text-align: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 0px 0;
   border-radius: 20px;
 }
 
@@ -38,8 +38,13 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1 {
   color: #000;
+}
+
+h2 {
+  color: #000;
+  font-size: medium;
 }
 
 a.download-link, a.video-link {
@@ -79,6 +84,8 @@ footer p {
   padding: 14px 20px;
   transition: 0.3s;
   border-radius: 20px;
+  m
+  
 }
 
 .tab button:hover {

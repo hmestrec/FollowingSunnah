@@ -19,10 +19,19 @@ header {
   border-radius: 20px;
 }
 
+.header-scrolled {
+  padding: 5px 10px;
+  background-color: #b2923e;
+}
+
 .logo {
   max-width: 100px; /* Adjust width as needed */
   height: auto;
   border-radius: 5px;
+}
+
+.logo-scrolled {
+  max-width: 75px;
 }
 
 .tab {

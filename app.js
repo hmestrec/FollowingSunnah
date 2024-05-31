@@ -84,3 +84,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    const logo = document.querySelector('.logo');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) { // Adjust the scroll distance as needed
+            header.classList.add('header-scrolled');
+            logo.classList.add('logo-scrolled');
+        } else {
+            header.classList.remove('header-scrolled');
+            logo.classList.remove('logo-scrolled');
+        }
+    });
+});

@@ -38,6 +38,7 @@ header {
 
 .logo-scrolled {
   max-width: 75px;
+  position: fixed;
 }
 
 .tab {

@@ -55,7 +55,9 @@ header {
   background-color: #e6c772;
   border-radius: 20px;
   margin: 10px;
+  justify-content:center;
 }
+
 
 .tabcontent.active {
   display: block;
